@@ -5,6 +5,10 @@
     font-family: 'Montserrat';
 }
 
+body {
+    background: #000;
+}
+
 a:link,
 a:visited {
     color: #ED462F;
@@ -62,6 +66,7 @@ a:active {
 .header-main-title {
     color: #fff;
     font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.09em #000;
 }
 
 .character-search-box,
