@@ -9,6 +9,10 @@ body {
     background: #000;
 }
 
+#contentContainer {
+    background: #180404;
+}
+
 a:link,
 a:visited {
     color: #ED462F;
@@ -24,17 +28,7 @@ a:active {
     box-shadow: 0 1rem 2rem rgba(black, .4);
     transform: rotate(5deg) scale(1.2);
     padding: 2px;
-    /* -webkit-transform: rotate(5deg) scale(1.3); */
 }
-
-
-/* Character Search Page */
-
-
-/* Character Search Page */
-
-
-/* Character Search Page */
 
 .desafioHeader {
     background: #000;
@@ -61,6 +55,16 @@ a:active {
     background: url(./img/FundoHeader.png);
     background-position: center;
     background-size: cover;
+}
+
+.jumbotron a {
+    color: #FFF;
+    background: #000;
+}
+
+.text-muted a {
+    color: #000;
+    background: none;
 }
 
 .header-main-title {
@@ -92,19 +96,204 @@ a:active {
     border-radius: 2px;
 }
 
+.card-body a {
+    color: red;
+    background: none;
+}
 
-/* Single Comic Page */
+.video {
+    margin-top: 200px;
+}
 
+.video h2 {
+    margin-top: 40px;
+    text-align: center;
+}
 
-/* Single Comic Page */
+.video p {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
+.baner {
+    position: relative;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Single Comic Page */
+.banner .content img {
+    width: 100%;
+    margin-bottom: 15px;
+}
 
+.banner .content h2 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 500;
+}
 
-/* Single Comic Page */
+.banner .content p {
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 15px 0 25px;
+}
 
+.trailer {
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-image: url(./img/fundoFilme.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* .single-comice__container {
-    background-color: #22262A;
-} */
+.contato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #0b0b0c;
+}
+
+.contatoTexto {
+    margin-top: -50px;
+    color: #FFF;
+    width: 500px;
+    margin-right: -150px;
+}
+
+.contatoTexto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contatoTexto p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contato-form {
+    padding-top: 30px;
+    padding-right: 100px;
+}
+
+.contato-form label {
+    display: block;
+    color: #FFF;
+    font-size: 1.125rem;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.contato-form input {
+    color: #FFF;
+    display: block;
+    width: 150%;
+    border: 2px solid #FFF;
+    background: none;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 0.875rem;
+}
+
+.contato-form textarea {
+    display: block;
+    width: 150%;
+    height: 120px;
+    color: #FFF;
+    border: 2px solid #FFF;
+    background: none;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 0.875rem;
+}
+
+.contato-form button {
+    color: #FFF;
+    background: #1c1c1f;
+    width: 150%;
+    padding: 7px 40px;
+    margin-bottom: 100px;
+}
+
+.contato-form button:hover {
+    color: #000;
+    background: #FFF;
+}
+
+.formphp label.nao-aparece,
+.formphp input.nao-aparece {
+    display: none !important;
+}
+
+#form-erro span,
+#form-send span {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#form-send {
+    color: #31aa39;
+}
+
+#form-erro {
+    color: #f64540;
+}
+
+.footerMarvel-content {
+    padding-top: 40px;
+}
+
+.footerA {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.footerA img {
+    width: 200px;
+}
+
+.footerA p {
+    font-size: 1.2rem;
+    color: #FFF;
+}
+
+.footerA a {
+    padding: 15px;
+    color: #FFF;
+    font-size: 1.6rem;
+}
+
+.footerA a:hover {
+    background: royalblue;
+}
+
+.footerA a:hover:nth-child(1) {
+    background: #000080;
+}
+
+.footerA a:hover:nth-child(2) {
+    background: #ab0877;
+}
+
+.footerA a:hover:nth-child(3) {
+    background: #330303;
+}
+
+.textoDireitos {
+    font-size: 0.7rem;
+    text-align: center;
+    color: #FFF;
+}

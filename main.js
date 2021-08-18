@@ -92,13 +92,13 @@ function connection() {
                     "Revistas " +
                     characterAttributes.comics.available +
                     " | " +
-                    "Series: " +
+                    "Séries: " +
                     characterAttributes.series.available +
                     " | " +
-                    "Stories: " +
+                    "Histórias: " +
                     characterAttributes.stories.available +
                     " | " +
-                    "Events: " +
+                    "Eventos: " +
                     characterAttributes.events.available +
                     "</p>" +
                     '<p class="mb-1 text-muted" id="characterInfoAttribution">' +
@@ -159,7 +159,9 @@ function comics(characterID) {
                 output +=
                     '<h2 id="comicMainTitle">Revistas</h2>' + '<div class="card-columns">';
 
+                //marcarComicosRaros(comics);
                 for (const i in comics) {
+
                     if (comics.hasOwnProperty(i)) {
                         const comic = comics[i];
 
@@ -176,6 +178,7 @@ function comics(characterID) {
                             '"></a>' +
                             '<div class="card-body">' +
                             '<h5 class="card-title">' +
+                            // 'if(comic.EhComicoRaro) ? " Revista rara" : ""' +
                             comic.title +
                             "</h5>";
 
@@ -187,7 +190,7 @@ function comics(characterID) {
                         }
 
                         output +=
-                            '<p style="font-size: 12px;" class="card-text text-muted">Characters: ';
+                            '<p style="font-size: 12px;" class="card-text text-muted">Personagem: ';
 
                         for (const k in comic.characters.items) {
                             if (comic.characters.items.hasOwnProperty(k)) {
@@ -198,7 +201,7 @@ function comics(characterID) {
 
                         output += "</p>";
                         output +=
-                            '<p style="font-size: 12px;" class="card-text text-muted">Creators: ';
+                            '<p style="font-size: 12px;" class="card-text text-muted">Creator: ';
 
                         for (const j in comic.creators.items) {
                             if (comic.creators.items.hasOwnProperty(j)) {
@@ -253,7 +256,7 @@ function singleComic() {
     xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
     xhr.onloadstart = function() {
         document.getElementById("comicsSpinnerSection").innerHTML =
-            '<strong id="spinnerText" class="text-secondary">Buscando info da revista...</strong>' +
+            '<strong id="spinnerText" class="text-secondary" style="color:#FFF;">Buscando info da revista...</strong>' +
             '<div class="spinner-border text-secondary ml-auto" role="status" ' +
             'aria-hidden="true" id="spinner"></div>';
     }
@@ -299,7 +302,7 @@ function singleComic() {
             output +=
                 '<p class="card-text">' +
                 '<small class="text-muted">' +
-                " Characters: ";
+                " Personagem: ";
             for (const i in comicCharacters) {
                 if (comicCharacters.hasOwnProperty(i)) {
                     const character = comicCharacters[i];
@@ -313,11 +316,12 @@ function singleComic() {
             }
 
             output +=
+                '<h2 style="font-size:40px;">Preço: 25,00' +
                 "</small>" +
                 "</p>" +
-                '<p class="card-text">' +
+                '<p style="font-size:15px;" class="card-text">' +
                 '<small class="text-muted">' +
-                "Creators: ";
+                "Criadores: ";
             for (const i in comicCreators) {
                 if (comicCreators.hasOwnProperty(i)) {
                     const creator = comicCreators[i];
@@ -414,16 +418,16 @@ function comicCreator() {
 
             output +=
                 '<p class="text-muted mb-3">' +
-                "Comics: " +
+                "Revistas: " +
                 creatorInfo.comics["avaliável"] +
                 " | " +
-                "Series: " +
+                "Séries: " +
                 creatorInfo.series["avaliável"] +
                 " | " +
-                "Stories: " +
+                "Histórias: " +
                 creatorInfo.stories["avaliável"] +
                 " | " +
-                "Events: " +
+                "Eventos: " +
                 creatorInfo.events["avaliável"] +
                 "</p>";
 
@@ -531,4 +535,20 @@ function creatorSingleComic(comicResourceURI) {
             '<strong id="spinnerText" class="text-secondary">Pronto.</strong>';
     }
     xhr.send()
+}
+
+function marcarComicosRaros(comics) {
+
+    const quantidadeComicosRaros = Math.ceil(comics.length / 10);
+
+    const arrayIndexMarcarComoRaro = [];
+
+    while (quantidadeComicosRaros--) {
+        const randomIndex = Math.floor(Math.random() * (quantidadeComicosRaros + 1));
+        arrayIndexMarcarComoRaro.push(randomIndex);
+    }
+
+    for (const index in arrayIndexMarcarComoRaro) {
+        comics[index].EhComicoRaro = true;
+    }
 }
