@@ -125,9 +125,14 @@ a:active {
     align-items: center;
 }
 
-.banner .content img {
+#desktop {
+    display: block;
     width: 100%;
     margin-bottom: 15px;
+}
+
+#celular {
+    display: none;
 }
 
 .banner .content h2 {
@@ -296,4 +301,282 @@ a:active {
     font-size: 0.7rem;
     text-align: center;
     color: #FFF;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+/*---------------------------- RESPONSIVO -------------------------------------*/
+
+@media(max-width:450px) {
+    .desafioHeader {
+        margin-bottom: 0px;
+    }
+    .itensHeader {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logoHeader img {
+        width: 150px;
+        margin: 15px;
+    }
+    .titleHeader h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .header-main-title {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .baner .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #celular {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    #desktop {
+        display: none;
+    }
+    .banner .content h2 {
+        font-size: 1.4rem;
+    }
+    .banner .content p {
+        font-size: 0.9rem;
+        margin-bottom: 80px;
+    }
+    .trailer {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    .contato {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .contatoTexto {
+        margin-top: 0px;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .contatoTexto h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .contatoTexto p {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .contato-form {
+        width: 100%;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .contato-form label {
+        font-size: 1rem;
+        line-height: 15px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contato-form input {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 0.8rem;
+    }
+    .contato-form textarea {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 90px;
+        font-size: 0.8rem;
+    }
+    .contato-form button {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 100px;
+    }
+    .footerMarvel-content {
+        padding-top: 40px;
+    }
+    .footerA {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .footerA img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .footerA p {
+        margin-left: 3%;
+        margin-right: 3%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .footerA a {
+        padding: 15px;
+        font-size: 1.6rem;
+    }
+    .textoDireitos {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 0.6rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 650px) {
+    .itensHeader {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logoHeader img {
+        width: 150px;
+        margin: 15px;
+    }
+    .titleHeader h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .header-main-title {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .contato {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .contatoTexto {
+        margin-top: 0px;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .contatoTexto h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .contatoTexto p {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .contato-form {
+        width: 100%;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .contato-form label {
+        font-size: 1rem;
+        line-height: 15px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contato-form input {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 0.8rem;
+    }
+    .contato-form textarea {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 90px;
+        font-size: 0.8rem;
+    }
+    .contato-form button {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 100px;
+    }
+    .footerMarvel-content {
+        padding-top: 40px;
+    }
+    .footerA {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .footerA img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .footerA p {
+        margin-left: 3%;
+        margin-right: 3%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .footerA a {
+        padding: 15px;
+        font-size: 1.6rem;
+    }
+    .textoDireitos {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 0.6rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 655px) and (max-width: 780px) {
+    .contato {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contatoTexto {
+        width: 45%;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .contatoTexto h2 {
+        margin-top: -100px;
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    .contatoTexto p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .footerA {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerA img {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .footerA p {
+        font-size: 1rem;
+    }
+    .footerA a {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+    .textoDireitos {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
 }

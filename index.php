@@ -57,7 +57,8 @@
         <section class="video">
               <div class="banner">
                     <div class="content">
-                          <img src="img/fundoCapa.png">
+                          <img id="desktop" src="img/fundoCapa.png">
+                          <img id="celular" src="img/fundoCapaCelular.png">
                           <h2>Shang-Chi e a Lenda dos Dez Anéis da Marvel Studios | trailer oficial</h2>
                           <p>
                           O filme Shang-Chi da Marvel Studios e A Lenda dos Dez Anéis na maior estréia do ano e no próximo capítulo do Universo Cinematográfico da Marvel!
@@ -106,10 +107,10 @@
                   <img src="img/logoUalzem2.png" al="logo footer">
                   <p>Teste com API Marvel para a empresa SG2 Sistemas</p>
                   <div class="footerMarvel-sociais">
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-github"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
+                        <a href="https://www.linkedin.com/in/ualzem-campos/" alt="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ualzem/" alt="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/Ualzem" alt="Github" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://www.behance.net/mezlau00cf" alt="Behance" target="_blank"><i class="fa fa-behance"></i></a>
                   </div>
             </div>
             <div class="footerB">
