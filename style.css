@@ -96,6 +96,18 @@ a:active {
     border-radius: 2px;
 }
 
+.shop-item-button {
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 600px;
+}
+
+#precos {
+    color: #ab0877;
+    background: #f64540;
+    font-size: 5rem;
+}
+
 .card-body a {
     color: red;
     background: none;

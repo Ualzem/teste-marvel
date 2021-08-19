@@ -159,7 +159,8 @@ function comics(characterID) {
                 output +=
                     '<h2 id="comicMainTitle">Revistas</h2>' + '<div class="card-columns">';
 
-                //marcarComicosRaros(comics);
+                marcarComicosRaros(comics);
+                console.log(comics);
                 for (const i in comics) {
 
                     if (comics.hasOwnProperty(i)) {
@@ -178,8 +179,8 @@ function comics(characterID) {
                             '"></a>' +
                             '<div class="card-body">' +
                             '<h5 class="card-title">' +
-                            // 'if(comic.EhComicoRaro) ? " Revista rara" : ""' +
                             comic.title +
+                            `${comic.EhComicoRaro ? " - REVISTA RARA  "  : ""}` +
                             "</h5>";
 
                         if (comic.description != null) {
@@ -188,6 +189,14 @@ function comics(characterID) {
                                 comic.description +
                                 "</p>";
                         }
+
+
+
+
+
+
+
+
 
                         output +=
                             '<p style="font-size: 12px;" class="card-text text-muted">Personagem: ';
@@ -270,12 +279,14 @@ function singleComic() {
         if (this.status == 200) {
             const results = JSON.parse(this.responseText),
                 comicInfo = results["data"].results[0],
-                comicImage =
-                comicInfo.thumbnail["path"] + "." + comicInfo.thumbnail["extension"],
+                comicImage = comicInfo.thumbnail["path"] + "." + comicInfo.thumbnail["extension"],
                 comicDescription = comicInfo.description,
                 comicCharacters = comicInfo.characters.items,
-                comicCreators = comicInfo.creators.items;
+                comicCreators = comicInfo.creators.items,
+                comicPrice = comicInfo.prices[0].price;
 
+
+            console.log(comicInfo);
             let output = "";
 
             output +=
@@ -293,6 +304,7 @@ function singleComic() {
                 '<div class="card-body">' +
                 '<h5 class="card-title">' +
                 comicInfo.title +
+
                 "</h5>";
 
             if (comicDescription !== null && comicDescription !== "") {
@@ -316,7 +328,7 @@ function singleComic() {
             }
 
             output +=
-                '<h2 style="font-size:40px;">Preço: 25,00' +
+                `<h2 class="precoValor" style="font-size:40px;">Preço: ${comicPrice}` +
                 "</small>" +
                 "</p>" +
                 '<p style="font-size:15px;" class="card-text">' +
@@ -539,7 +551,7 @@ function creatorSingleComic(comicResourceURI) {
 
 function marcarComicosRaros(comics) {
 
-    const quantidadeComicosRaros = Math.ceil(comics.length / 10);
+    let quantidadeComicosRaros = Math.ceil(comics.length / 10);
 
     const arrayIndexMarcarComoRaro = [];
 
@@ -551,4 +563,5 @@ function marcarComicosRaros(comics) {
     for (const index in arrayIndexMarcarComoRaro) {
         comics[index].EhComicoRaro = true;
     }
+
 }
