@@ -531,7 +531,7 @@ function creatorSingleComic(comicResourceURI) {
 
             comicColumns.innerHTML += output;
         } else {
-            comicColumns.innerHTML == '<h2>Ocorreu um erro!. </h2>';
+            comicColumns.innerHTML == '<h2>Ocorreu um erro!!. </h2>';
         }
     }
     xhr.onloadend = function() {
