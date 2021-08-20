@@ -159,7 +159,7 @@ function comics(characterID) {
                 output +=
                     '<h2 id="comicMainTitle">Revistas</h2>' + '<div class="card-columns">';
 
-                marcarComicosRaros(comics);
+                marcaComicsRaros(comics);
                 console.log(comics);
                 for (const i in comics) {
 
@@ -180,7 +180,7 @@ function comics(characterID) {
                             '<div class="card-body">' +
                             '<h5 class="card-title">' +
                             comic.title +
-                            `${comic.EhComicoRaro ? " - REVISTA RARA  "  : ""}` +
+                            `${comic.isComicRaro ? " - REVISTA RARA  "  : ""}` +
                             "</h5>";
 
                         if (comic.description != null) {
@@ -189,14 +189,6 @@ function comics(characterID) {
                                 comic.description +
                                 "</p>";
                         }
-
-
-
-
-
-
-
-
 
                         output +=
                             '<p style="font-size: 12px;" class="card-text text-muted">Personagem: ';
@@ -395,7 +387,7 @@ function comicCreator() {
 
     xhr.onerror = function() {
         comicCreatorContainerDiv.innerHTML =
-            '<h2 id="header-main-title single-comic__main-title">An error has occured, check connection.</h2>';
+            '<h2 id="header-main-title single-comic__main-title">Ocorreu um erro, confira sua conexão.</h2>';
     }
 
     xhr.onload = function() {
@@ -532,14 +524,14 @@ function creatorSingleComic(comicResourceURI) {
             output +=
                 '<a href="./revista.php?comic-id=' +
                 comicInfo.id +
-                '">Check it out!</a>' +
+                '">Detalhes</a>' +
                 "</div>" +
                 "</div>" +
                 "</div>";
 
             comicColumns.innerHTML += output;
         } else {
-            comicColumns.innerHTML == '<h2>An error has occured. </h2>';
+            comicColumns.innerHTML == '<h2>Ocorreu um erro!. </h2>';
         }
     }
     xhr.onloadend = function() {
@@ -549,19 +541,19 @@ function creatorSingleComic(comicResourceURI) {
     xhr.send()
 }
 
-function marcarComicosRaros(comics) {
+function marcaComicsRaros(comics) {
 
-    let quantidadeComicosRaros = Math.ceil(comics.length / 10);
+    let quantComicsRaros = Math.ceil(comics.length / 10);
 
     const arrayIndexMarcarComoRaro = [];
 
-    while (quantidadeComicosRaros--) {
-        const randomIndex = Math.floor(Math.random() * (quantidadeComicosRaros + 1));
+    while (quantComicsRaros--) {
+        const randomIndex = Math.floor(Math.random() * (quantComicsRaros + 1));
         arrayIndexMarcarComoRaro.push(randomIndex);
     }
 
     for (const index in arrayIndexMarcarComoRaro) {
-        comics[index].EhComicoRaro = true;
+        comics[index].isComicRaro = true;
     }
 
 }

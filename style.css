@@ -1,3 +1,13 @@
+/*
+Theme Name: sg2sistemas
+Theme URI: http://ualzemprojetos.com/
+Author: Ualzem Campos
+Author URI: http://ualzemprojetos.com/
+Description: Tema criado para teste da empresa SG2 Sistemas para a vaga de desenvolvedor wordpress.
+Version: 1.0
+*/
+
+@import 'bootstrap-5.0.2-examples/checkout/form-validation.css';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -100,12 +110,12 @@ a:active {
     position: absolute;
     margin-top: -300px;
     margin-left: 600px;
+    transition: none;
 }
 
-#precos {
-    color: #ab0877;
-    background: #f64540;
-    font-size: 5rem;
+a .shop-item-button:hover {
+    background: #31aa39;
+    transform: rotate(0.1deg) scale(1.01) !important;
 }
 
 .card-body a {
@@ -316,6 +326,23 @@ a:active {
 }
 
 
+/*----------------------------------CHECKOUT-------------------------------------------*/
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
 /*---------------------------------------------------------------------------------*/
 
 
@@ -448,6 +475,15 @@ a:active {
         font-size: 0.6rem;
         text-align: center;
         margin-bottom: 10px;
+    }
+    .shop-item-button {
+        width: 98%;
+        position: absolute;
+        font-size: 0.7rem;
+        margin-top: -70px;
+        margin-left: 1%;
+        margin-right: 5%;
+        padding: 5%;
     }
 }
 
@@ -590,5 +626,11 @@ a:active {
     .textoDireitos {
         font-size: 0.7rem;
         margin-bottom: 10px;
+    }
+    .shop-item-button {
+        position: absolute;
+        font-size: 0.8rem;
+        margin-top: -250px;
+        margin-left: 400px;
     }
 }
