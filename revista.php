@@ -29,11 +29,7 @@
   </div> 
   <section class="shop-item">
     <div class="shop-item-details">
-<<<<<<< HEAD
-     <form action="/bootstrap-5.0.2-examples/checkout/index.html">
-=======
-     <form action="/bootstrap-5.0.2-examples/checkout/checkout.php">
->>>>>>> be59aa45a9be87a5fdc64c5c58e8bc0a8cf4d381
+     <form action="bootstrap-5.0.2-examples/checkout/checkout.html">
       <button class="btn btn-primary shop-item-button" type="submit"> ADICIONAR AO CARRINHO</button>
      </form>
       
