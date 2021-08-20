@@ -1,24 +1,8 @@
-<!doctype html>
-<html lang="en">
+<?php
+// Template Name: Checkout
+?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Checkout</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
-
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <link href="form-validation.css" rel="stylesheet">
-</head>
+<?php get_header(); ?>
 
 <body class="bg-light">
 
@@ -238,20 +222,6 @@
             </div>
         </main>
 
-        <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; Marvel Uazem - 2021</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                <li class="list-inline-item"><a href="#">Termos</a></li>
-                <li class="list-inline-item"><a href="#">Suporte</a></li>
-            </ul>
-        </footer>
-    </div>
+        <?php get_footer(); ?>
 
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="form-validation.js"></script>
-</body>
-
-</html>
+       
