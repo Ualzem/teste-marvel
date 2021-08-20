@@ -29,9 +29,10 @@
   </div> 
   <section class="shop-item">
     <div class="shop-item-details">
-      <a href="http://localhost:8080//bootstrap-5.0.2-examples/checkout/index.html">
-      <button class="btn btn-primary shop-item-button" type="button"> ADICIONAR AO CARRINHO</button>
-      </a>
+     <form action="/bootstrap-5.0.2-examples/checkout/index.html">
+      <button class="btn btn-primary shop-item-button" type="submit"> ADICIONAR AO CARRINHO</button>
+     </form>
+      
     </div>
   </section>
 
