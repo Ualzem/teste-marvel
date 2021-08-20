@@ -2,28 +2,7 @@
 // Template Name: Checkout
 ?>
 
-<<<<<<< HEAD:bootstrap-5.0.2-examples/checkout/index.html
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Checkout</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
-
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <link href="form-validation.css" rel="stylesheet">
-</head>
-=======
 <?php get_header(); ?>
->>>>>>> be59aa45a9be87a5fdc64c5c58e8bc0a8cf4d381:bootstrap-5.0.2-examples/checkout/checkout.php
 
 <body class="bg-light">
 

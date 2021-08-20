@@ -9,6 +9,12 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
+         <!-- Bootstrap core CSS checkout -->
+     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+
       <title> <?php bloginfo('name'); ?> </title> 
       <meta name='viewport' content='width=device-width, initial-scale=1'>
       <link rel="stylesheet" type='text/css' href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
