@@ -1,6 +1,8 @@
-<!doctype html>
-<html lang="en">
+<?php
+// Template Name: Checkout
+?>
 
+<<<<<<< HEAD:bootstrap-5.0.2-examples/checkout/index.html
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +21,9 @@
 
     <link href="form-validation.css" rel="stylesheet">
 </head>
+=======
+<?php get_header(); ?>
+>>>>>>> be59aa45a9be87a5fdc64c5c58e8bc0a8cf4d381:bootstrap-5.0.2-examples/checkout/checkout.php
 
 <body class="bg-light">
 
@@ -238,20 +243,6 @@
             </div>
         </main>
 
-        <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; Marvel Uazem - 2021</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                <li class="list-inline-item"><a href="#">Termos</a></li>
-                <li class="list-inline-item"><a href="#">Suporte</a></li>
-            </ul>
-        </footer>
-    </div>
+        <?php get_footer(); ?>
 
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="form-validation.js"></script>
-</body>
-
-</html>
+       
