@@ -8,6 +8,13 @@ Version: 1.0
 */
 
 @import 'bootstrap-5.0.2-examples/checkout/form-validation.css';
+
+/* ESTILO DO PAINEL ADMIN DO WORDPRESS*/
+
+.customize-support .header {
+    margin-top: 32px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -62,7 +69,7 @@ a:active {
 }
 
 .jumbotron {
-    background: url(./img/FundoHeader.png);
+    background: url(img/FundoHeader.png);
     background-position: center;
     background-size: cover;
 }
@@ -170,15 +177,16 @@ a .shop-item-button:hover {
     margin: 15px 0 25px;
 }
 
-.trailer {
+
+/*.trailer {
     height: 500px;
     margin-top: 50px;
     margin-bottom: 100px;
-    background-image: url(./img/fundoFilme.png);
+    background-image: url(/img/fundoFilme.png);
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 .contato {
     width: 100%;

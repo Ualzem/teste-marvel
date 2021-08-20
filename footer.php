@@ -1,8 +1,8 @@
      <footer class="footerMarvel">
         <div class="footerMarvel-content">
               <div class="footerA">
-              <img src="img/logoUalzem2.png" al="logo footer">
-              <p>Teste com API Marvel para a empresa SG2 Sistemas</p>
+              <img src="<?php the_field('footer_logo') ?>" al="logo footer">
+              <p><?php the_field('footer_text') ?></p>
               <div class="footerMarvel-sociais">
                     <a href="https://www.linkedin.com/in/ualzem-campos/" alt="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/ualzem/" alt="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>

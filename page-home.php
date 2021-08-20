@@ -4,9 +4,12 @@
 
 <?php get_header(); ?>
 
+<!-- Início do loop -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
         <section class="jumbotron">
               <div class="container">
-                    <h1 class="header-main-title">Digite o nome do personagem Marvel desejado</h1>
+                    <h1 class="header-main-title"><?php the_field('search_title') ?></h1>
                     <form id="connectionForm">
                           <div class="form-group">
                                 <input required type="text" name="name" id="name" class="form-control character-search-box"
@@ -24,22 +27,7 @@
               <section id="comicSection"></section>
         </div>
 
-        <section class="video">
-              <div class="banner">
-                    <div class="content">
-                          <img id="desktop" src="img/fundoCapa.png">
-                          <img id="celular" src="img/fundoCapaCelular.png">
-                          <h2>Shang-Chi e a Lenda dos Dez Anéis da Marvel Studios | trailer oficial</h2>
-                          <p>
-                          O filme Shang-Chi da Marvel Studios e A Lenda dos Dez Anéis na maior estréia do ano e no próximo capítulo do Universo Cinematográfico da Marvel!
-                          Assista ao novo trailer de "Shang-Chi e a Lenda dos Dez Anéis" da Marvel Studios e experimente-o apenas nos cinemas em 3 de setembro.</p>
-
-                          <div class="trailer">
-                              <iframe width="727" height="409" src="https://www.youtube.com/embed/UQzDFF8xN3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          </div>
-                    </div>
-              </div>
-        </section>
+        <?php include(TEMPLATEPATH . "/inc/video.php" ); ?> <!-- include da seção video -->
 
         <section class="contato">
               <div class="contatoTexto">
@@ -71,6 +59,8 @@
                         <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
               </form>
         </section>
+
+        <?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>
         

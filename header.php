@@ -31,10 +31,10 @@
               <div class="container">
                       <div class=itensHeader>
                           <div class="logoHeader">
-                                <img src="img/logoUalzem2.png">
+                                <img src="<?php the_field('intro_logo') ?>">
                           </div>
                           <div class="titleHeader">
-                                <h1>Desafio Single Page Application SG2 Sistemas<h1>
+                                <h1><?php the_field('intro_title') ?><h1>
                           </div>
                       </div>
               </div>
